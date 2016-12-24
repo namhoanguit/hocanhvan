@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <AutoCompleteTextView
+            android:id="@+id/formtracuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="Nhập từ cần tra"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:lines="1"
+            android:textColorHint="#2a39c3">
+        </AutoCompleteTextView>
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/buttontracuu"
+            android:background="@drawable/icon_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnNghe"
+            android:background="@drawable/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+    </TableRow>
+
+    <WebView
+        android:id="@+id/wvhienthi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+</LinearLayout>

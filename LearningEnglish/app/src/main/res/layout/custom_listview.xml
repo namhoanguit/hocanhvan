@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_gramma"/>
+        <TextView
+            android:id="@+id/tvcutom_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textColor="#0e3564"
+            android:gravity="center_vertical"
+            android:text="Hello"/>
+    </TableRow>
+
+</LinearLayout>
