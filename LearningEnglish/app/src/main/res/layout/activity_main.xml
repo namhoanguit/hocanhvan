@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FEFEFE">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imghinhanh"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="50dp"
+            android:src="@drawable/background" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_above="@+id/linearLayout2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btbatdau"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#FF9900"
+                android:text="Phát âm"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/icon_sound"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/bthocnghe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#7140c1"
+                android:text="Học nghe"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/example"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bttudien"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#4331b4"
+                android:drawableLeft="@drawable/icon_tudien"
+                android:text="Từ điển"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnguphap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/grammar"
+                android:background="#FF0000"
+                android:text="Ngữ pháp"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
